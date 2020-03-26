@@ -26,3 +26,6 @@ myIP=$(ifconfig eth1 | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-
 echo "Custom resource definition installed."
 echo
 echo "Now you can access to https://${myIP}:8443/console/ with the \"developer\" user"
+
+# set iptables rule
+sudo iptables -I INPUT -i docker0 -j ACCEPT

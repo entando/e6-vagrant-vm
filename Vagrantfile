@@ -94,6 +94,11 @@ Vagrant.configure("2") do |config|
      mv oc /usr/local/bin
      mv kubectl /usr/local/bin
      popd
+     # install resolvconf package to fix dns issues
+     apt-get -y install resolvconf
+     echo "nameserver 8.8.8.8" > /etc/resolvconf/resolv.conf.d/head
+     echo "nameserver 1.1.1.1" >> /etc/resolvconf/resolv.conf.d/head
+     service resolvconf restart
    SHELL
    # Copy bash script to /home/vagrant
    config.vm.provision "file", source: "start-oc.sh", destination: "start-oc.sh"
