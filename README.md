@@ -8,7 +8,9 @@
 
 ## Create the Box
 
-In the root of this project run `vagrant up` and wait until the process ends. The first time it will take longer so you can take a coffee and relax.
+In the root of this project run `vagrant up` and wait until the process ends. The first time it will take longer so you can take a coffee and relax. 
+
+**During the startup phase vagrant will ask you to choose the network interface to use for the bridging.** This way all the network configuration will be done automatically and you'll can access to openshift web console from your pc.
 
 ## Login to the VM
 
