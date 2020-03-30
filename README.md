@@ -43,3 +43,8 @@ Execute `./start-oc.sh` and yes... if you want you can take another coffee. This
 - `vagrant snapshot restore [name]` restores the named snapshot
 - `vagrant snapshot list` shows you the snapshots
 - `vagrant snapshot delete [name]` delete the named snapshot
+
+
+## Entando helm instructions
+
+The value of `ENTANDO_DEFAULT_ROUTING_SUFFIX` you have to update in your `values.yaml` file of the [helm quickstart project](https://github.com/entando-k8s/entando-helm-quickstart) is made by: **[your-openshift-cluster-ip].xip.io**
