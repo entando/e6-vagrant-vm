@@ -4,7 +4,7 @@
 
 ### Software
 
-- VirtualBox > 6 https://www.virtualbox.org/wiki/Downloads
+- VirtualBox > 6.1 https://www.virtualbox.org/wiki/Downloads
 - Any of Linux, Windows > 8.1 (Professional), Mac OSX
 - Vagrant https://www.vagrantup.com/downloads.html
 - Oc client tools installed in your host pc [Download From here](https://github.com/openshift/origin/releases/download/v3.11.0/openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit.tar.gz)
