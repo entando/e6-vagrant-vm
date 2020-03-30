@@ -103,4 +103,6 @@ Vagrant.configure("2") do |config|
    SHELL
    # Copy bash script to /home/vagrant
    config.vm.provision "file", source: "start-oc.sh", destination: "start-oc.sh"
+   # Set execute permission to file
+   config.vm.provision "shell", inline: "chmod +x /home/vagrant/start-oc.sh"
 end
