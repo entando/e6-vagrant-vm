@@ -17,7 +17,7 @@ sleep 5
 oc new-project my-app
 
 # Clone the entando custom resourses and install them 
-git clone https://github.com/entando-k8s/entando-k8s-custom-model.git
+git clone https://github.com/entando-k8s/entando-k8s-custom-model.git --branch v6.1.0
 oc create -f entando-k8s-custom-model/src/main/resources/crd/
 
 echo "----------------------------------------------------------------"
