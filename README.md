@@ -30,7 +30,7 @@ Execute `vagrant ssh` and you'll be connected in ssh to the newly created VM.
 
 Execute `./start-oc.sh` and yes... if you want you can take another coffee. This script will also :
 - assigns the cluster-role rights to the **developer** user 
-- install the Entando CRD
+- install the Entando CRD (v6.1.0)
 - create a project called **my-app**
 
 ## Common vagrant commands
